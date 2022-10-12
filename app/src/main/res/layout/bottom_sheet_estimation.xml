@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:paddingTop="16dp"
+    android:paddingBottom="36dp">
+
+    <include
+        android:id="@+id/cardViewAvatar"
+        layout="@layout/card_user_avatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingHorizontal="16dp"
+        android:text="@string/estimation_title"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewAvatar" />
+
+    <TextView
+        android:id="@+id/subtitleTour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/estimation_subtitle_tour"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ImageView
+        android:id="@+id/emojiTour"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/description_emoji_tour"
+        app:layout_constraintBottom_toBottomOf="@+id/subtitleTour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subtitleTour"
+        app:srcCompat="@drawable/ic_emoji_middle" />
+
+    <SeekBar
+        android:id="@+id/seekBarTour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="16dp"
+        android:max="4"
+        android:progress="2"
+        android:progressTint="@color/transparent"
+        android:thumb="@drawable/seek_bar_thumb"
+        android:tickMark="@drawable/seek_bar_tick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleTour" />
+
+    <TextView
+        android:id="@+id/subtitleGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/estimation_subtitle_guide"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTour" />
+
+    <ImageView
+        android:id="@+id/emojiGuide"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/subtitleGuide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subtitleGuide"
+        app:srcCompat="@drawable/ic_emoji_middle"
+        android:contentDescription="@string/description_emoji_guide" />
+
+    <SeekBar
+        android:id="@+id/seekBarGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="16dp"
+        android:max="4"
+        android:progress="2"
+        android:progressTint="@color/transparent"
+        android:thumb="@drawable/seek_bar_thumb"
+        android:tickMark="@drawable/seek_bar_tick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleGuide" />
+
+    <TextView
+        android:id="@+id/subtitleInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/estimation_subtitle_info"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarGuide" />
+
+    <ImageView
+        android:id="@+id/emojiInfo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/subtitleInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subtitleInfo"
+        app:srcCompat="@drawable/ic_emoji_middle"
+        android:contentDescription="@string/description_emoji_info" />
+
+    <SeekBar
+        android:id="@+id/seekBarInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="16dp"
+        android:max="4"
+        android:progress="2"
+        android:progressTint="@color/transparent"
+        android:thumb="@drawable/seek_bar_thumb"
+        android:tickMark="@drawable/seek_bar_tick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleInfo" />
+
+    <TextView
+        android:id="@+id/subtitleNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/estimation_subtitle_navigation"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarInfo" />
+
+    <ImageView
+        android:id="@+id/emojiNavigation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/subtitleNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subtitleNavigation"
+        app:srcCompat="@drawable/ic_emoji_middle"
+        android:contentDescription="@string/description_emoji_navigation" />
+
+    <SeekBar
+        android:id="@+id/seekBarNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="16dp"
+        android:max="4"
+        android:progress="2"
+        android:progressTint="@color/transparent"
+        android:thumb="@drawable/seek_bar_thumb"
+        android:tickMark="@drawable/seek_bar_tick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emojiNavigation" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#4400FF"
+        android:padding="16dp"
+        android:text="@string/estimation_button_next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarNavigation" />
+
+    <TextView
+        android:id="@+id/textNotAsked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/estimation_button_not_ask"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

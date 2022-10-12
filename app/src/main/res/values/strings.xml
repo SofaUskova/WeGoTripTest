@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">WeGoTripTest</string>
+
+    <string name="button_leave_review">Оставить отзыв</string>
+
+    <string name="estimation_title">Офигенно, вы дошли до конца! Расскажите, как вам?</string>
+    <string name="estimation_subtitle_tour">Как вам тур в целом?</string>
+    <string name="estimation_subtitle_guide">Понравился гид?</string>
+    <string name="estimation_subtitle_info">Как вам подача информации?</string>
+    <string name="estimation_subtitle_navigation">Удобная новигация между шагами?</string>
+    <string name="estimation_button_next">Далее</string>
+    <string name="estimation_button_not_ask">Не хочу отвечать</string>
+
+    <string name="feedback_subtitle_like">Что вам особенно понравилось в этом туре?</string>
+    <string name="feedback_hint">Напишите здесь, чем вам запомнился тур, посоветуете ли его друзьям и как удалось ли повеселиться</string>
+    <string name="feedback_subtitle_upgrade">Как мы могли бы улучшить подачу информации?</string>
+    <string name="feedback_button_save">Сохранить отзыв</string>
+    <string name="feedback_button_not_ask">Пропустить</string>
+
+    <string name="description_user_avatar">user_avatar</string>
+    <string name="description_emoji_tour">emoji_tour</string>
+    <string name="description_emoji_guide">emoji_guide</string>
+    <string name="description_emoji_info">emoji_info</string>
+    <string name="description_emoji_navigation">emoji_info</string>
+
+    <string name="unidentified_error">Неопознанная ошибка</string>
+</resources>
